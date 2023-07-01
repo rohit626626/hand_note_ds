@@ -1,0 +1,101 @@
+//sequence
+\ escape sequence sign
+
+paremetar = def add(a,b) a,b is paremetar
+argument = print(add(5,6))  5,6 is argument
+//List
+Order collection
+List are mutable(changable)
+Sort, Reverse function are change original list
+List are change for ex- pop del insert append method are used in list
+[1,4,3,5,2,7]
+
+//Tuple
+Order collection
+Tuple are immutable(not changable)
+Tuple are not changable for ex-Day(Monday, Tuesday, Wednesday etc), Month(January, February) are not change(we are use list in tuple and change list)
+(1,4,5,7,2,3)
+ firts  = 'mango', 'apple', 'banana' (By default createt tuple)
+One value tuple create (2,)
+
+//Dictonary
+Unorder collection
+Dictonary are store value in key and value pair
+{"name":"Rohit", "age":25}
+
+//Set 
+Unorder collection
+Unique value
+Set are mutable(changable)
+no store list tupple and dictonary
+{1,2,4,5,3,8}
+
+//*args and **kwargs
+*args = args(arugment) using in function , no idea one, two and more value using function this condition we are using args
+for ex- def nums(*args)
+
+**kwargs = kwargs(key, value menas dictonary) using in function ,no idea one, two and more value using function this condtion we are using kwargs
+for ex- def nums(*args)
+
+format for using *args paremetar *kwargs and default paremetar
+PADK (paremetar, *args, default, **kwargs)
+
+//Lambda
+lambda  = (lambda expression, anonymous function, no name, one line function)
+lambda a,b:a+b
+
+//Enumerate
+Enumerate function with for loop to track position of our item.
+ex- for pos, name in enumerate(names):
+
+//Map
+maping one function to other item(list, tuple etc)
+for ex- list(map(lambda a:a*2, std)) maping lambda function to std list //one time useing for loop
+
+//Filter
+Filtering data for ex- Given odd even number in a list
+for ex- list(map(lambda a:a%2==0, std)) given even number in std list //one time useing for loop
+
+
+//Zip
+Combine two or more list and combine list devided diffrent-2 list
+for ex- (list(zip(user_id, names))) //combine user_id list to names list //combine row by row
+list(zip(*num)) convert num list to two list
+
+//Any 
+any function return true any value are true otherwise false
+for ex- numbers=[2,3,5,6] // any[(num%2==0 for num in numbers]) print ture because 2 and 6 are devided by 2
+
+//All
+all function return true all value are true otherwise false
+for ex- numbers=[2,3,5,6] // any[(num%2==0 for num in numbers]) print false because 3 and 5 are not devided by 2
+
+//Closure
+Function returning function is closure //It is firts class function
+
+//Decorator
+Enhance the functionality of other function //@ is a symbol of decorator
+
+//Generator
+Generator generate one value at a time. Next value generate old value deleted \\Use yeild keyword
+
+
+Constructor(__init__)
+
+Object means Instance
+Function means Method in OOP
+
+
+Abstraction - Devided In peace(Computer, ram, rom, hd)
+
+Encapulation - Hide implemention (peace) information(Computer, ram, rom, hd)
+
+__name__ //dunder/magic mathod
+
+//Mathod Overriding //Two and more class have a same method it condition object are access only one class method it condition object overriding method
+
+//Operator overloading 5+6=11, "5"+"6"=56 + is a  operator overloading + add number and string
+
+Polymorphism(Many form, method overriding, operator overloading 5+6=11, "5"+"6"=56)
+
+Special Mathod(Dunder Method) = __add__

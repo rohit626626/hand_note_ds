@@ -1,0 +1,127 @@
+adduser rohit(add new user)
+usermod -aG sudo rohit(permission sudo user)
+ufw app list(ufw fierwell, check avilabel app list)
+ufw status(disable to enable)
+ufw allow OpenSSH(allow OpenSSH)
+ufw enable(enable ufw)
+sudo su(rohit sudo user direct login root)
+
+
+sudo apt update(app update)
+sudo apt install apache2(install apache2)
+sudo ufw app info "Apache Full"(info apache2 server)
+sudo ufw allow in "Apache Full"(allow incoming connection)
+copy ip address check apache2 install/not install
+
+sudo apt install mysql-server(install mysql-server)
+sudo mysql(mysql inter)
+select user, authentication_string, plugin, host from mysql.user;(check user information)
+alter user 'root'@'localhost identified with mysql_native_password by 'rohit123';(change root user password)
+exit;(exit mysql)
+sudo mysql -p(login next time)
+sudo apt install php lipapache2-mod-php php-mysql(install moduel and php)
+sudo nano /etc/apache2/mods-enabled/dir.conf(edit file in nano editor change first run index.html to index.php)
+ctrl+x y enter(save edit file)
+sudo service apache2 restart(apache2 server restart)
+
+cd/var/www(all website here)
+ls(check all website list, for example html file here)
+cd html(insert html website diretry)
+ls(html file show, index.html)
+sudo nano index.php(edit index.php file and change it file and save it file access directly)
+
+suod apt install phpmyadmin php-mbstr php-gettext;(install php myadmin)
+sudo phpmmode mbstring;(enalbe php mode)
+sudo service apache2 restart;(big change and apache2 server restart)
+sudo mysql -p(login next time)
+crete user 'rotit'@'localhost' identified by 'rohit12345';(crete new mysql user)
+grant all privileges on *.* to rohit'@'localhost with grant option;(all privileges new user)
+
+//host myphp website
+/var/www(host website inside this directly)
+sudo mkdir myanony(create new directry)
+ls-lart(directry list some information)
+sudo chown -R $USER:$USER myanony(by default all directry access root user, this command myanony directry access sudo user(rohit))
+cd myanony/(inter myanony directly)
+sudo nano index.html(create new file index.html(in nano editor))
+cd /etc/apache2/sites-available/(inter  this directry)
+ls(show file list, all by default apache2 configration file and all website configration file)
+sudo cp 000-default.conf myanony.conf(copy 000-default.conf in myanony.conf)
+pwd(present working directory)
+ls(all file show in this directly with myanony file)
+sudo nano myanony.conf(edit myanony.conf file in nano editor)
+
+//we can change myanony.conf
+ServerAdmin rohit123@gmail.com(given server admin email)
+ServerName myanonychat.com(given domain name)
+ServerAlias www.myanonychat.com(given alias for domain name)
+DocumentRoot /var/www/myanony(all website file insert this directly)
+sudo a2ensite myanony.conf(enable myanony.conf site)
+sudo a2dissite 000-default.conf(disable 000-default.conf site(by default enable this site))
+sudo service apache2 restart(restart)
+sudo apache2ctl configtest(check configration, ok all right)
+
+//host flask website
+sudo apt install libapache2-mod-wsgi-py3(install python3 apache2 mod)
+cd/var/www(enter www directly)
+mkdir flaskapp(create flaskapp directry)
+cd flaskapp/(enter flaskapp directly)
+mkdir flaskapp(create another flaskapp directry)
+cd flaskapp/(enter flaskapp directly)
+sudo apt install python3-pip(install python3 pip)
+pip3 install virtualenv(create virtual inverment)
+sudo virtualenv venv(virtual inverment)
+source venv/bin/activate(virtual inverment activate)
+pip3 install flask requests flask-sqlalchemy(install more package)
+cd /etc/apache2/sites-available/(inter  this directry)
+sudo cp 000-default.conf flaskapp.conf(copy 000-default.conf in flaskapp.conf)
+sudo nano flaskapp.conf(edit flaskapp.conf file in nano editor)
+
+//we can change flaskapp.conf
+ServerName myanonychat.com(given domain name)
+ServerAdmin rohit123@gmail.com(given server admin email)
+WSGIScriptAdmin / /var/www/flaskapp/flaskapp.wsgi
+>Directory /var/www/flaskapp/flaskapp/>
+	Order allow,deny
+	Allow from all
+</Directory>
+Alias /static /var/www/flaskapp/flaskapp/static
+<Directory var/www/flaskapp/flaskapp/static/>
+	Order allow,deny
+	Allow from all
+sudo a2ensite flaskapp.conf(enable flaskapp.conf site)
+sudo a2dissite 000-default.conf(disable 000-default.conf site(by default enable this site))
+sudo service apache2 restart(restart)
+sudo apache2ctl configtest(check configration, ok all right)
+cd var/www/flaskapp/
+sudo nano flaskapp.wsgi
+
+#!/usr/bin/python3activte_this = '/var/www/flaskapp/flaskapp/venv/bin/activate_this.py'
+exec(open(activate_this).read(), dict(__file__=activate_this))
+import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,"/var/www/flaskapp/")
+from flaskapp import app as application
+application.secret_kay = 'Add-my-secret-1234-key!@SS%^8*(sdfsdf643535##$$'
+filename:flaskapp.wsgi(filename)
+cd var/www/flaskapp/flaskapp/
+vim __init__.py(Cerate new file)
+// given website data data in __init__.py file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

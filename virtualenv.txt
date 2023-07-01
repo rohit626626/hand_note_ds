@@ -1,0 +1,10 @@
+//Virtual Environment
+pip install virtualenv (Install virtual environment)
+virtualenv rohit (Create new virtualenv rohit, downloading and using new package)
+source rohit\bin\activate (Activate virutalenv rohit)
+deactivate (exit to virtual environment)
+pip freeze > requirements.txt (all requirment package)
+pip install -r .\requirements.txt (install all requirment package)
+virtualenv --system-site-packages rohit2 (Create rohit2 virtual env using all system package)
+
+

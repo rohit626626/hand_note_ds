@@ -1,0 +1,17 @@
+shortcuts
+alt+z = text properly set in lines
+ctrl+enter = next line
+p*5 = 5 paragraphs create
+lorem5 = 5 dommy word create
+alt = select multiple position
+source.unsplash.com = for random images
+formet document = set item propely
+alt+arrow key = To move selected data 
+! = html data
+div = div tag start and end
+div.class1 = create class1
+div.class1*3 = create three class1
+span#id1*10
+span.class1.class2 = multipal class create
+shif+tab = all select item shift forward
+div.box#box$*4 = all item class is box and id is box1, box2 ...box4

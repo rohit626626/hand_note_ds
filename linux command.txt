@@ -1,0 +1,19 @@
+pwd = Print working dir
+ls = List
+clear
+/ = (window path sign)
+[] = for indexing
+. = for method
+cd = Change dir   (cd e:// Inter e dir)
+mkdir = Make dir  (mkdir "python pro") Create folder
+cd python pro (enter python pro) Enter folder
+touch first.py (create new file)
+cd .. (back one folder)
+rm "first.py" (remove one file)
+rm -rf "python pro" (remove folder)
+code first.py (open file in vs)
+mv zzz.py myfile.py (rename file)
+mv zzz.py myfile.py ./newfolder (move file in folder same dir)
+mv zzz.py myfile.py .. (move file in folder back)
+cp myfile.py ./newfolder (copy file in folder same dir)
+cd ~ (default location) 

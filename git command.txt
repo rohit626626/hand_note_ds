@@ -1,0 +1,88 @@
+git config --global user.name "rohit"(create new user for all repostery)
+git config --global user.email "rohitchaudharylochab@gmail.com"(create new useremail for all repostery)
+git config user.name"rohit"(create new user for current repostery)
+git config user.email"rohitchaudharylochab@gmail.com"(create new useremail for current repostery)
+git --global user.name(check user name)
+git --global user.email(check user email)
+
+git config --global core.editor vim(open vim editor)
+git --version(show git version)
+
+git init(create new git repositery)
+git status(check file modify, stagingd area)
+git add first.txt(first.txt file working directry to staging area)
+git add .(all file working directry to staging area, stages modify and deleted, without ndeleted)
+git add --a(all file working directry to staging area)
+git add -u(stages modify and deleted, without new)
+git add -A(all file stages)
+git commit -m "file first time change"(commit message - file first time change)
+git commit -a -m "direct commit"(modify file directly commited skip staging area)
+git commit --amend(we can add more messaage in older commit)
+
+.gitignore(.gitignore is a file we given file name, they file is ignore)
+*.log(all file ignore end with .log extension)
+dir/(complete folder ignore)
+/dir/(dir folder in dir folder, outer dir folder ignore)
+static/dir(ignore static/dir static folder inside only dir folder other static inside folder and file not ignore)
+
+git log(all commit show)
+git log -p(all commit show with this line all and this line remove)
+git log -p -3(last 3 commit show with this line all and this line remove)
+git log --stat(short commit simmary)
+git log --pretty=oneline(given commit in one line)
+git log --pretty=short(given commit short ex-author)
+git log --pretty=full(given commit full ex-author, date)
+git log --pretty=format:"%h -- %ae"(given commit in diffrent format h for #code and ae for author email)
+git log --since=2.days(given commit last two days)
+git log --since=2.months(given commit last two months)
+
+git diff(compare staging area to working directry)
+git diff myfile.txt(given changes in myfile.txt(add this line and remove this line))
+git diff --staged(compare previous commit to next staging area)
+git diff --staged myfile.txt(myfile.txt, compare previous commit to next staging area)
+
+git restore  --staged myfile.txt(staging area file back to unstaging area) 
+git reset myfile.txt(myfile.txt staging area file back to unstaging area)
+git checkout -- myfile.txt(modify file back to previous commit(last commit)) 
+git checkout myfile.txt(modify file back to previous commit(last commit)) 
+git checkout .(all modify file back to previous commit)
+git checkout -f(all modify file back to previous commit(last commit))
+
+git branch -b devlop(create new branch devlop)
+git checkout master(switch branch in master)
+git checkout devlop(switch branch in devlop)
+git branch myfilecopy
+git branch(show all branch)
+git merge myfilecopy(master branch run this command, merge myfilecopy in master)
+git branch -v(last commit # and message)
+git branch --merged(already merge branch)
+git branch --no-merged(already not merge branch)
+
+//merge conflict(merge conflict is a provlem two branch change same date, 
+this condition git confused no select change we choose one select and remove error )
+git push origin master(push all local changes in remote)
+git pull(pull remote change in local git)
+
+git rm "myfile.txt"(remove file)
+git rm --chaced myfile.txt(we select file in gitignore but file is track because before is not gitignore, 
+this command not track gitignore file)
+git branch -d myfilecopy(delete myfilecopy branch, no merge branch given message 
+no merge branch given -D delete branch)
+git push  origin --delete myfilecopy(file delete from remote)
+git push -d origin myfilecopy(delete myfilecopy branch on internet, no merge branch given message 
+no merge branch given -D delete branch)
+rm -rf .git(git are remove of workspace)
+
+git remote(given git repositery)
+git remote add origin url(add new origin(name) repositery)
+git remote -v(given git repositery list pull and push data)
+git push origin -u origin master(push data in git repositery)
+git push origin myfile.txt:bugfix.txt(change file name and push on internet)
+git clone https://git/gitreposetry/flask.git(copy data from internet with same folder)
+git clone https://git/gitreposetry/flask.git myrepository(copy data from internet in new myrepository folder)
+git clone https://git/gitreposetry/flask.git .(copy data from internet in without folder, git open this folder)
+git confic --global alias.st status(we create short name for ex-st means status)
+
+shift+insert(past data from internet to git)
+ls -la(show all file)
+git mv myfile.txt renmyfile.txt(rename file)

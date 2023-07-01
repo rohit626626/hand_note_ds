@@ -1,0 +1,30 @@
+feture > f1 f2 f3 f4 (input)
+label > l1(0) l2(1) (output)
+
+superlearning (linear regration classfier)
+1 classification cat dog mango, apple
+2 regiresion home price
+
+linear regiresion
+home> area price 
+
+unsuperlearning (herical clustring)
+1 clustring  fruits(tokri)> 5apple, 3mango, 5orange
+2 assocation phone> relative item
+
+sse=a*a+b*b+c*c (loss)
+smse=(a*a+b*b+c*c)/3
+
+
+python
+import sklearn
+sklearn.__verson__
+
+
+
+
+
+for notebook
+http://localhost:8888/tree#notebooks
+http://localhost:8888/?token=f81c5b038e7991301b30f380ff4aefea4bb39650a7240c81
+C:/Users/ROHIT%20CHAUDHARY/AppData/Roaming/jupyter/runtime/nbserver-7792-open.html
